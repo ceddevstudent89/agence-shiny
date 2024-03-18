@@ -10,9 +10,22 @@ import NotFoundPage from "./components/NotFoundPage/NotFoundPage.jsx";
 import Results from "./pages/Results/Results.jsx";
 import Freelances from "./pages/Freelances/Freelances.jsx";
 
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+    * {
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+    }
+`;
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
