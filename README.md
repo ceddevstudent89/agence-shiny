@@ -1,1 +1,1 @@
-Cours OpenClassrooms Créer un application complète avec React JS
+Cours OpenClassrooms Créer une application complète avec React JS
